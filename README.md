@@ -148,4 +148,4 @@ db.type('active'); // boolean
 ```
 
 #### NOTE
-###### Important updates for this package coming soon.
+- Important updates for this package coming soon.
