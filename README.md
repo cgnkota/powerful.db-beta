@@ -9,7 +9,7 @@ or
 # HOW TO USE MODULE
 
 ````javascript
-const DataBase = require('bird.db');
+const {DataBase} = require('bird.db');
 const db = new DataBase('database.json'); // file name
 ````
 
