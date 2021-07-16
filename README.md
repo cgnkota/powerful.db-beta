@@ -51,14 +51,14 @@ const db = new DataBase(
 ```javascript
 db.get('test'); // Output: 'test'
 // or
-db.get('test<.>test'); // Output: 'test1'
+db.get('obj<.>test'); // Output: 'test1'
 ```
 
 ##### set Method
 ```javascript
 db.set('name', 'Yusuf'); // Output: 'Yusuf'
 // or
-db.set('user.name', 'Yusuf'); // Output: {name: 'Yusuf'}
+db.set('user<.>name', 'Yusuf'); // Output: {name: 'Yusuf'}
 ```
 
 #### has Method
@@ -72,7 +72,7 @@ db.has('test'); // Output: true
 ```javascript
 db.push('arr', 'test'); // Output: {arr: ['test']}
 // or
-db.push('db.numbers', [1, 2, 3]); // Output: {db: {numbers: [1, 2, 3]}}
+db.push('db<.>numbers', [1, 2, 3]); // Output: {db: {numbers: [1, 2, 3]}}
 // or
 db.push('arr', {name: 'Yusuf'}); // Output: {arr: [{name: Yusuf}]}
 ```
