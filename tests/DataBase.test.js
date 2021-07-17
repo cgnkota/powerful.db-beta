@@ -2,7 +2,6 @@ const { DataBase } = require('../src/index');
 const db = new DataBase(
     'test',
     {
-        separator: '.',
         backUp: {
             active: false,
             timeInterval: 0.1 // minute
