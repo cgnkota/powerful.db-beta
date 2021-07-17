@@ -1,18 +1,19 @@
 {
-  "name": "@bird.db-beta",
+  "name": "sex.db-beta",
   "version": "1.0.1",
+  "description": "A readable JSON database.",
   "main": "src/index.js",
   "bin": "src/index.js",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/xnamespace/bird.db-beta"
+    "url": "https://github.com/xnamespace/sex.db-beta"
   },
-  "homepage": "https://github.com/xnamespace/bird.db-beta/blob/main/README.md",
+  "homepage": "https://github.com/xnamespace/sex.db-beta/blob/main/README.md",
   "maintainers": [
     "Yusuf"
   ],
   "bugs": {
-    "url": "https://github.com/xnamespace/bird.db-beta/issues"
+    "url": "https://github.com/xnamespace/sex.db-beta/issues"
   },
   "author": {
     "name": "Yusuf"
