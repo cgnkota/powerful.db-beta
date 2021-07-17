@@ -1,9 +1,9 @@
 # INSTALLATION
 
 ```
-npm install @bird.db-beta
+npm install sex.db-beta
 // or
-yarn add @bird.db-beta
+yarn add sex.db-beta
 ```
 
 ---
@@ -11,7 +11,7 @@ yarn add @bird.db-beta
 # HOW TO USE MODULE
 
 ````javascript
-const {DataBase} = require('@bird.db-beta');
+const {DataBase} = require('sex.db-beta');
 const db = new DataBase(
     'database',
     {
@@ -50,7 +50,7 @@ const db = new DataBase(
 ```javascript
 db.get('test'); // Output: 'test'
 // or
-db.get('obj.>test'); // Output: 'test1'
+db.get('obj.test'); // Output: 'test1'
 ```
 
 ##### set Method
