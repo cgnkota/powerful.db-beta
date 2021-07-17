@@ -1,9 +1,9 @@
 # INSTALLATION
 
 ```
-npm install bird.db
+npm install bird.db-beta
 // or
-yarn add bird.db
+yarn add bird.db-beta
 ```
 
 ---
@@ -11,11 +11,10 @@ yarn add bird.db
 # HOW TO USE MODULE
 
 ````javascript
-const {DataBase} = require('bird.db');
+const {DataBase} = require('bird.db-beta');
 const db = new DataBase(
     'database',
     {
-        separator: '.',
         backUp: {
             active: true,
             timeInterval: 1, // minute
@@ -51,14 +50,14 @@ const db = new DataBase(
 ```javascript
 db.get('test'); // Output: 'test'
 // or
-db.get('obj<.>test'); // Output: 'test1'
+db.get('obj.>test'); // Output: 'test1'
 ```
 
 ##### set Method
 ```javascript
 db.set('name', 'Yusuf'); // Output: 'Yusuf'
 // or
-db.set('user<.>name', 'Yusuf'); // Output: {name: 'Yusuf'}
+db.set('user.name', 'Yusuf'); // Output: {name: 'Yusuf'}
 ```
 
 #### has Method
@@ -72,7 +71,7 @@ db.has('test'); // Output: true
 ```javascript
 db.push('arr', 'test'); // Output: {arr: ['test']}
 // or
-db.push('db<.>numbers', [1, 2, 3]); // Output: {db: {numbers: [1, 2, 3]}}
+db.push('db.numbers', [1, 2, 3]); // Output: {db: {numbers: [1, 2, 3]}}
 // or
 db.push('arr', {name: 'Yusuf'}); // Output: {arr: [{name: Yusuf}]}
 ```
