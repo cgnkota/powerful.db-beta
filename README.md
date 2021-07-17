@@ -1,9 +1,9 @@
 # INSTALLATION
 
 ```
-npm install bird.db-beta
+npm install @bird.db-beta
 // or
-yarn add bird.db-beta
+yarn add @bird.db-beta
 ```
 
 ---
@@ -11,7 +11,7 @@ yarn add bird.db-beta
 # HOW TO USE MODULE
 
 ````javascript
-const {DataBase} = require('bird.db-beta');
+const {DataBase} = require('@bird.db-beta');
 const db = new DataBase(
     'database',
     {
