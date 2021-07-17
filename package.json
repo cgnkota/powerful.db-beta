@@ -1,16 +1,18 @@
 {
-  "name": "bird.db",
-  "version": "2.0.0",
+  "name": "@bird.db-beta",
+  "version": "1.0.1",
   "main": "src/index.js",
   "bin": "src/index.js",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/xnamespace/bird.db"
+    "url": "https://github.com/xnamespace/bird.db-beta"
   },
-  "homepage": "https://github.com/xnamespace/bird.db/blob/main/README.md",
-  "maintainers": ["Yusuf"],
+  "homepage": "https://github.com/xnamespace/bird.db-beta/blob/main/README.md",
+  "maintainers": [
+    "Yusuf"
+  ],
   "bugs": {
-    "url": "https://github.com/xnamespace/bird.db/issues"
+    "url": "https://github.com/xnamespace/bird.db-beta/issues"
   },
   "author": {
     "name": "Yusuf"
