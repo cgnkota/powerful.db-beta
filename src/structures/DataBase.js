@@ -113,7 +113,7 @@ class DataBase {
     add(entries, value) {
         if (!entries || !value) throw error.Type('Entries and value cannot be empty.');
         if (isNaN(value)) throw error.Error('Invalid number.');
-        if (!Number(get(this.data, entries))) throw error.Type('This entries type is not number');
+        if ((get(this.data, entries)) && typeof (get(this.data, entries)) !== 'number') throw error.Type('You cannot add number with string.');
 
         const data_ = get(this.data, entries);
 
@@ -134,7 +134,7 @@ class DataBase {
     subtract(entries, value) {
         if (!entries || !value) throw error.Type('Entries and value cannot be empty.');
         if (isNaN(value)) throw error.Error('Invalid number.');
-        if (!Number(get(this.data, entries))) throw error.Type('This entries type is not number');
+        if ((get(this.data, entries)) && typeof (get(this.data, entries)) !== 'number') throw error.Type('You cannot subtract number with string.');
 
         const data_ = get(this.data, entries);
 
@@ -155,7 +155,7 @@ class DataBase {
     push(entries, value) {
         if (!entries || !value) throw error.Type('Entries and value cannot be empty.');
 
-        set(this.data, entries, this.get(entries) ? [...this.get(entries), value] : [value]);
+        set(this.data, entries, this.get(entries) ? [this.get(entries).toString(), value] : [value]);
 
         const newData = JSON.stringify(this.data, null, 2);
 
