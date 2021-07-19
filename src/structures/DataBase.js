@@ -84,7 +84,7 @@ class DataBase {
      */
     delete(entries) {
         if (!entries) throw error.Type('Entries cannot be empty.');
-        if (!get(this.data, entries)) throw error.Type('This entries cannot found.');
+        if (!get(this.data, entries)) throw error.Type('This entry cannot be found.');
 
         unset(this.data, entries);
 
@@ -113,7 +113,7 @@ class DataBase {
     add(entries, value) {
         if (!entries || !value) throw error.Type('Entries and value cannot be empty.');
         if (isNaN(value)) throw error.Error('Invalid number.');
-        if ((get(this.data, entries)) && typeof (get(this.data, entries)) !== 'number') throw error.Type('You cannot add number with string.');
+        if ((get(this.data, entries)) && typeof (get(this.data, entries)) !== 'number') throw error.Type('You cannot add a number in a string entry.');
 
         const data_ = get(this.data, entries);
 
@@ -134,7 +134,7 @@ class DataBase {
     subtract(entries, value) {
         if (!entries || !value) throw error.Type('Entries and value cannot be empty.');
         if (isNaN(value)) throw error.Error('Invalid number.');
-        if ((get(this.data, entries)) && typeof (get(this.data, entries)) !== 'number') throw error.Type('You cannot subtract number with string.');
+        if ((get(this.data, entries)) && typeof (get(this.data, entries)) !== 'number') throw error.Type('You cannot subtract a number in a string entry.');
 
         const data_ = get(this.data, entries);
 
@@ -171,7 +171,7 @@ class DataBase {
      */
     removeArray(entries, value) {
         if (!entries || !value) throw error.Type('Entries and value cannot be empty.');
-        if (!get(this.data, entries)) throw error.Type('This array cannot found.');
+        if (!get(this.data, entries)) throw error.Type('This array cannot be found.');
 
         const i = this.data[entries].indexOf(value);
         this.data[entries].splice(i, 1);
