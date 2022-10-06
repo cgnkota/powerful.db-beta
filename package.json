@@ -1,22 +1,23 @@
 {
-  "name": "sex.db-beta",
+  "name": "powerful.db-beta",
   "version": "1.0.1",
   "description": "A readable JSON database.",
   "main": "src/index.js",
   "bin": "src/index.js",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/xnamespace/sex.db-beta"
+    "url": "https://github.com/CaganAgabey/powerful.db-beta"
   },
-  "homepage": "https://github.com/xnamespace/sex.db-beta/blob/main/README.md",
+  "homepage": "https://github.com/CaganAgabey/powerful.db-beta/blob/main/README.md",
   "maintainers": [
+    "Çağan",
     "Yusuf"
   ],
   "bugs": {
-    "url": "https://github.com/xnamespace/sex.db-beta/issues"
+    "url": "https://github.com/CaganAgabey/powerful.db-beta/issues"
   },
   "author": {
-    "name": "Yusuf"
+    "name": "Çağan"
   },
   "keywords": [
     "readable",
