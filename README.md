@@ -1,9 +1,9 @@
 # INSTALLATION
 
 ```
-npm install sex.db-beta
+npm install powerful.db-beta
 // or
-yarn add sex.db-beta
+yarn add powerful.db-beta
 ```
 
 ---
@@ -11,7 +11,7 @@ yarn add sex.db-beta
 # HOW TO USE MODULE
 
 ````javascript
-const {DataBase} = require('sex.db-beta');
+const {DataBase} = require('powerful.db-beta');
 const db = new DataBase(
     'database',
     {
@@ -55,9 +55,9 @@ db.get('obj.test'); // Output: 'test1'
 
 ##### set Method
 ```javascript
-db.set('name', 'Yusuf'); // Output: 'Yusuf'
+db.set('name', 'Çağan'); // Output: 'Çağan'
 // or
-db.set('user.name', 'Yusuf'); // Output: {name: 'Yusuf'}
+db.set('user.name', 'Çağan'); // Output: {name: 'Çağan'}
 ```
 
 #### has Method
@@ -73,7 +73,7 @@ db.push('arr', 'test'); // Output: {arr: ['test']}
 // or
 db.push('db.numbers', [1, 2, 3]); // Output: {db: {numbers: [1, 2, 3]}}
 // or
-db.push('arr', {name: 'Yusuf'}); // Output: {arr: [{name: Yusuf}]}
+db.push('arr', {name: 'Çağan'}); // Output: {arr: [{name: 'Çağan'}]}
 ```
 
 #### removeArray Method
